@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D83424D52CE7F89E00B3E52F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D83424D42CE7F89E00B3E52F /* CodeScanner */; };
+		D83424E32CE8596F00B3E52F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D83424E22CE8596F00B3E52F /* FirebaseAuth */; };
+		D83424E52CE8596F00B3E52F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D83424E42CE8596F00B3E52F /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D83424B72CE7F36500B3E52F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83424D52CE7F89E00B3E52F /* CodeScanner in Frameworks */,
+				D83424E32CE8596F00B3E52F /* FirebaseAuth in Frameworks */,
+				D83424E52CE8596F00B3E52F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = BeHeard;
 			packageProductDependencies = (
+				D83424D42CE7F89E00B3E52F /* CodeScanner */,
+				D83424E22CE8596F00B3E52F /* FirebaseAuth */,
+				D83424E42CE8596F00B3E52F /* FirebaseFirestore */,
 			);
 			productName = BeHeard;
 			productReference = D83424A62CE7F36300B3E52F /* BeHeard.app */;
@@ -195,6 +207,10 @@
 			);
 			mainGroup = D834249D2CE7F36300B3E52F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D83424D32CE7F89E00B3E52F /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				D83424E12CE8596F00B3E52F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D83424A72CE7F36300B3E52F /* Products */;
 			projectDirPath = "";
@@ -399,11 +415,14 @@
 				DEVELOPMENT_TEAM = 2BY2NMR4CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Be Heard";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan State DL/ID to make sure your opnion is heard.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +447,14 @@
 				DEVELOPMENT_TEAM = 2BY2NMR4CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Be Heard";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan State DL/ID to make sure your opnion is heard.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +580,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D83424D32CE7F89E00B3E52F /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		D83424E12CE8596F00B3E52F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D83424D42CE7F89E00B3E52F /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83424D32CE7F89E00B3E52F /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		D83424E22CE8596F00B3E52F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83424E12CE8596F00B3E52F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D83424E42CE8596F00B3E52F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83424E12CE8596F00B3E52F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D834249E2CE7F36300B3E52F /* Project object */;
 }
